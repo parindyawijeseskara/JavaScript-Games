@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <script src="model/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="container-fluid">
+        <div class="wrapper">
+           <div class="box1 ">
+
+               <div class="image1">
+                   <img src="assets/img/image1.png" style="width:34%; height: 140px" >
+                   <p>Scissor</p >
+                   <p>Paper</p >
+                   <p>Rock</p >
+
+                   <div class="scoreBox">
+                       <p>SCORE</p>
+                       <h1>0</h1>
+                   </div>
+               </div>
+           </div>
+
+            <div class="hands">
+                <div class="paper">
+                    <img src="assets/img/image7.jpg" style="width: 160px; height: 150px;"  onclick="pickUserHand('paper')">
+                </div>
+                <div class="scissor">
+                    <img src="assets/img/image6.jpg" style="width: 160px; height: 150px;"  onclick="pickUserHand('scissor')">
+                </div>
+                <div class="rock">
+                    <img src="assets/img/image5.jpg" style="width: 160px; height: 150px;" onclick="pickUserHand('rock')">
+                </div>
+            </div>
+
+            <div class="compete">
+                <div class="userChoice">
+                    <h1>User Choice</h1>
+                    <div class="userSelectImage">
+                        <img id="userPickedImage" src="assets/img/image7.jpg" style="width: 190px;height: 180px">
+                    </div>
+                </div>
+
+                <div class="centerContainer">
+                    <div class="decision">
+                        <h1>You Win</h1>
+                    </div>
+                    <div class="newGame" onclick="startAgain()">
+                        <p>Play again</p>
+                    </div>
+                </div>
+
+                <div class="computerChoice">
+                    <h1>The Computer Choice</h1>
+
+                    <div class="computerSelectedImage">
+                        <img id="computerPickedImage" src="assets/img/image6.jpg" style="width: 190px;height: 180px">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
